@@ -1,1 +1,18 @@
-/*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* default black */
+}
