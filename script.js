@@ -1,24 +1,16 @@
-function highlight() {
+const link = document.getElementById("hover-link");
+const boldWords = document.querySelectorAll("strong");
 
-
-}function highlight() {
-  const boldTags = document.querySelectorAll('strong');
-  boldTags.forEach(tag => {
-    tag.style.color = 'rgb(0, 128, 0)'; // green
+// On mouse over the <a> tag
+link.addEventListener("mouseover", () => {
+  boldWords.forEach(word => {
+    word.style.color = "green";
   });
-}
+});
 
-function return_normal() {
-  const boldTags = document.querySelectorAll('strong');
-  boldTags.forEach(tag => {
-    tag.style.color = 'rgb(0, 0, 0)'; // black
+// On mouse out from the <a> tag
+link.addEventListener("mouseout", () => {
+  boldWords.forEach(word => {
+    word.style.color = "black";
   });
-}
-
-
-
-function return_normal() {
-    //Write your code here
-
-    
-}
+});
